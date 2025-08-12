@@ -1,0 +1,234 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+    font-family: "Smythe", system-ui;
+} 
+
+.all-content {
+    width: 600px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+}
+
+.header {
+    background-image: url("burger.png");
+    color: #FFFFFF;
+    padding: 40px;
+}
+
+.header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.header p {
+    display: inline-block;
+    font-size: 22px;
+    margin: 5px 0;
+}
+
+.cards {
+    padding: 40px 40px 0 40px;
+}
+
+.card-item {
+    display: flex;
+    border-bottom: 1px solid #D2D2D2D2;
+    padding-bottom: 40px;
+}
+
+.emoji {
+    font-size: 70px;
+    align-self: center;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.menu-item  h2 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.menu-item p {
+    font-size: 16px;
+    color: #8B8B8B;
+    margin: 0;
+}
+
+.menu-item span {
+    font-size: 20px;
+}
+
+.card-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    background-color: #FFFFFF;
+    border: 2px solid #DEDEDEDE;
+    border-radius: 50%;
+    align-self: center;
+    margin-left: auto;
+    font-size: 32px;
+    font-family: system-ui, sans-serif;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+.card-btn:hover {
+    background: radial-gradient(circle, #FFFFFFFF, #DEDEDEDE);
+}
+
+.invisible {
+    display: none;
+}
+
+.order-section {
+    padding: 40px;    
+}
+
+.order-section h3 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    margin-top: 0;
+    text-align: center;
+}
+
+.order-item {
+    display: flex;
+}
+
+.order-item p {
+    font-size: 28px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.order-item .remove-btn {
+    align-self: center;
+    padding: 2px;
+    background-color: #FFFFFF;
+    border: none;
+    color: #BBBBBB;
+    font-size: 12px;
+    cursor: pointer;
+    margin-left: 13px;
+}
+
+.order-item .remove-btn:hover {
+    color: #000000;
+    background-color: #DEDEDEDE;
+    border-radius: 5px;
+}
+
+.order-item .price {
+    align-self: center;
+    font-size: 20px;
+    margin-left: auto;
+}
+
+.order-total {
+    display: flex;
+    border-top: 2px solid #393333;
+    margin-top: 5px;
+}
+
+.order-total p {
+    font-size: 28px;
+}
+
+.total-price {
+    margin-left: auto;
+}
+
+.order-btn {
+    background-color: #16DB99;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    height: 60px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.modal-payment {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 524px;
+    height: 542px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0 0 40px #757575;
+}
+
+.modal-payment h4 {
+    font-size: 24px;
+    text-align: center;
+    margin: 46px 0;
+    
+}
+
+.payment-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 40px;
+}
+
+.modal-payment input {
+    height: 71px;
+    border: 2px solid #757575;
+    color: #757575;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 0 26px;
+}
+
+.payment-btn {
+    background-color: #16DB99;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    height: 71px;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+    filter: grayscale(60%);
+}
+
+.message-box {
+    background-color: #ECFDF5;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.message-text {
+    font-size: 32px;
+    color: #065F46;
+    padding: 51px 10px;
+    margin: 0;
+}

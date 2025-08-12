@@ -1,0 +1,66 @@
+<!doctype  html>
+<html lang="en">
+    <head>
+        <meta character-set="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="all-content">
+            <header class="header">
+                <h1>Jimmy's Diner</h1>
+                <p>The best burgers and pizzas in town.</p>
+            </header>
+            <main class="main" id="main">
+                <!-- Main menu list -->
+            </main>
+            <section class="order-section invisible" id="order-section">
+                <h3>Your order</h3>
+                <div class="order-list" id="order-list">
+                    <!-- Order items -->
+                </div>
+                <div class="order-total">
+                    <p>Total price:</p>
+                    <p class="total-price" id="total-price">$0</p>
+                </div>
+                    <button class="order-btn" id="order-btn">Complete order</button>
+                </div>
+            </section>
+            <form class="modal-payment" id="modal-payment">
+                <h4>Enter card details</h4>
+                <div class="payment-inputs">
+                    <input 
+                        type="text"
+                        id="name"
+                        name="name" 
+                        placeholder="Enter your name"
+                        pattern="[a-zA-Z0-9]+"
+                        required/>
+                    <input 
+                        type="text"
+                        id="card"
+                        name="card" 
+                        placeholder="Enter card number"
+                        minlength="16" 
+                        maxlength="16"
+                        pattern="[0-9]{16}"
+                        required/>
+                    <input 
+                        type="text" 
+                        id="cvv"
+                        name="cvv"  
+                        placeholder="Enter CVV"
+                        minlength="3" 
+                        maxlength="3"
+                        pattern="[0-9]{3}"
+                        required/>
+                    <button type="submit" class="payment-btn" id="payment-btn">Pay</button>
+                </div>
+            </form>
+        </div>
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
