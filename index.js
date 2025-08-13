@@ -81,22 +81,6 @@ function renderMenu(){
     main.innerHTML = getMenuHtml()
 }
 
-function renderMessageBox(userName){
-    const messageBox = document.createElement('div')
-    const text = `Thanks, ${userName}! Your order is on its way!`
-    const messageText = document.createElement('h5')
-    messageBox.className = 'message-box'
-
-
-    // const textMessage = `Thanks, ${userNmae}! Your order is on its way!`
-    // orderSection.innerHTML = `
-    //     <div class="message-box">
-    //         <h5 id="message"></h5>
-    //     </div>
-    // `
-    // return document.getElementById('message').innerText = textMessage
-}
-
 document.addEventListener('click', function(e){
     if (e.target.dataset.addBtn) {
         addToOrderList(e.target.dataset.addBtn)
