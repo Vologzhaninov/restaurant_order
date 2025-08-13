@@ -13,6 +13,7 @@ body {
 
 .header {
     background-image: url("burger.png");
+    background-size: contain;
     color: #FFFFFF;
     padding: 40px;
 }
@@ -170,8 +171,8 @@ body {
     right: 0;
     bottom: 0;
     margin: auto;
-    width: 524px;
-    height: 542px;
+    width: 50%;
+    height: 90%;
     background-color: #FFFFFF;
     border-radius: 5px;
     box-shadow: 0 0 40px #757575;
