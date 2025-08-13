@@ -117,19 +117,24 @@ modalPayment.addEventListener('submit', function(event){
 })
 
 paymentBtn.addEventListener('click', function(){
-    paymentUser.name = document.getElementById('name').value
-    paymentUser.card = document.getElementById('card').value
-    paymentUser.cvv = document.getElementById('cvv').value
-    modalPayment.style.display = 'none'
-    main.classList.remove('disabled')
-    orderSection.classList.remove('disabled')
-    orderArray = []
-    orderSection.innerHTML = `
+    if (document.getElementById('name').value || document.getElementById('card').value || document.getElementById('cvv').value) {
+        paymentUser.name = document.getElementById('name').value
+        paymentUser.card = document.getElementById('card').value
+        paymentUser.cvv = document.getElementById('cvv').value
+        modalPayment.style.display = 'none'
+        main.classList.remove('disabled')
+        orderSection.classList.remove('disabled')
+        orderArray = []
+        orderSection.innerHTML = `
         <div class="message-box">
             <h5 class="message-text" id="message-text"></h5>
         </div>
-    `
-    document.getElementById('message-text').innerText = `Thanks, ${paymentUser.name}! Your order is on its way!`
+        `
+        document.getElementById('message-text').innerText = `Thanks, ${paymentUser.name}! Your order is on its way!`
+    }
+    else {
+        alert('Please fill in all fields')
+    }
 })
 
 renderMenu()
